@@ -17,4 +17,9 @@ const checkShip = (player, coordinate) => {
   return false;
 };
 
+const damageShip = (ship, coordinates) => {
+  ship.damage.push(coordinates);
+};
+
 module.exports.checkShip = checkShip;
+module.exports.damageShip = damageShip;
